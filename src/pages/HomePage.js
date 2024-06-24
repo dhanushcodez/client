@@ -16,7 +16,7 @@ const HomePage = () => {
   //get all cat
   const getAllCategory = async () => {
     try {
-      const { data } = await axios.get("/api/v1/category/get-category");
+      const { data } = await axios.get("https://urban-it-server.onrender.com/api/v1/category/get-category");
       if (data?.success) {
         setCategories(data?.category);
       }
