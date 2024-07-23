@@ -31,17 +31,12 @@ const Header = () => {
           </button>
           <div className="collapse navbar-collapse" id="navbarTogglerDemo01">
             <Link to="/" className="navbar-brand">
-              🛒 Ecommerce App
+              🛒 Urban Cart
             </Link>
             <ul className="navbar-nav ms-auto mb-2 mb-lg-0">
               <li className="nav-item">
                 <NavLink to="/" className="nav-link ">
                   Home
-                </NavLink>
-              </li>
-              <li className="nav-item">
-                <NavLink to="/category" className="nav-link ">
-                  Category
                 </NavLink>
               </li>
               {!auth?.user ? (
